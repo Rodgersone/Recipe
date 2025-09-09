@@ -1,0 +1,76 @@
+/* Glassmorphism Navbar */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 18px 0;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Shrink when scrolling */
+.glass-navbar.scrolled {
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand Logo */
+.brand-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6600, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: font-size 0.3s ease;
+}
+
+.glass-navbar.scrolled .brand-logo {
+  font-size: 1.4rem;
+}
+
+/* Nav Links */
+.nav-links .nav-link {
+  position: relative;
+  color: #222 !important;
+  font-weight: 500;
+  margin-left: 22px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Gradient underline hover */
+.nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6600, #ff9900);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link pill style */
+.active-link {
+  color: white !important;
+  background: linear-gradient(90deg, #ff6600, #ff9900);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Mobile toggle */
+.custom-toggle {
+  border: none;
+}
+
+.custom-toggle:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Carbonara",
+    "image": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
+    "category": "Pasta",
+    "description": "Classic Italian pasta dish made with creamy egg sauce, pancetta, and parmesan.",
+    "ingredients": ["Spaghetti", "Eggs", "Pancetta", "Parmesan", "Black Pepper"],
+    "instructions": "Boil pasta. Fry pancetta until crispy. Whisk eggs and parmesan. Combine pasta with pancetta, then stir in egg mixture off heat to create a creamy sauce."
+  },
+  {
+    "id": 2,
+    "name": "Chicken Curry",
+    "image": "https://www.themealdb.com/images/media/meals/1520084413.jpg",
+    "category": "Curry",
+    "description": "A flavorful Indian chicken curry simmered in aromatic spices and creamy sauce.",
+    "ingredients": ["Chicken", "Onions", "Garlic", "Ginger", "Tomatoes", "Curry Powder", "Coconut Milk"],
+    "instructions": "Sauté onions, garlic, ginger. Add spices and tomatoes. Stir in chicken and cook. Pour coconut milk and simmer until chicken is tender."
+  },
+  {
+    "id": 3,
+    "name": "Beef Tacos",
+    "image": "https://www.themealdb.com/images/media/meals/qtuwxu1468233098.jpg",
+    "category": "Mexican",
+    "description": "Crunchy tacos filled with seasoned beef, fresh veggies, and melted cheese.",
+    "ingredients": ["Taco Shells", "Ground Beef", "Onions", "Cheese", "Lettuce", "Tomatoes"],
+    "instructions": "Cook beef with onions and spices. Fill taco shells with beef, lettuce, tomatoes, and cheese. Serve with salsa or guacamole."
+  },
+  {
+    "id": 4,
+    "name": "Vegetable Stir Fry",
+    "image": "https://www.themealdb.com/images/media/meals/wqurxy1511453156.jpg",
+    "category": "Vegetarian",
+    "description": "Quick and healthy stir-fry packed with colorful vegetables and soy sauce glaze.",
+    "ingredients": ["Broccoli", "Carrots", "Bell Peppers", "Soy Sauce", "Garlic", "Ginger"],
+    "instructions": "Heat oil in a wok. Add garlic and ginger. Toss in chopped vegetables. Stir-fry quickly, then add soy sauce. Serve hot with rice."
+  },
+  {
+    "id": 5,
+    "name": "Margherita Pizza",
+    "image": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
+    "category": "Pizza",
+    "description": "Classic Italian pizza topped with fresh tomatoes, mozzarella, and basil.",
+    "ingredients": ["Pizza Dough", "Tomato Sauce", "Mozzarella", "Basil", "Olive Oil"],
+    "instructions": "Roll out pizza dough. Spread tomato sauce. Add mozzarella and basil leaves. Bake in hot oven until crust is golden and cheese is bubbling."
+  },
+  {
+    "id": 6,
+    "name": "Greek Salad",
+    "image": "https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg",
+    "category": "Salad",
+    "description": "Fresh and vibrant salad with cucumbers, tomatoes, olives, and feta cheese.",
+    "ingredients": ["Cucumber", "Tomatoes", "Red Onion", "Olives", "Feta Cheese", "Olive Oil"],
+    "instructions": "Chop cucumber, tomatoes, and onions. Mix in olives and feta. Drizzle with olive oil and season with oregano and salt."
+  },
+  {
+    "id": 7,
+    "name": "Pancakes",
+    "image": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg",
+    "category": "Breakfast",
+    "description": "Fluffy pancakes perfect for breakfast, served with syrup or fruits.",
+    "ingredients": ["Flour", "Eggs", "Milk", "Baking Powder", "Sugar", "Butter"],
+    "instructions": "Mix flour, sugar, baking powder, milk, and eggs. Fry spoonfuls in butter until golden on both sides. Serve with syrup or fruit."
+  },
+  {
+    "id": 8,
+    "name": "Caesar Salad",
+    "image": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
+    "category": "Salad",
+    "description": "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan.",
+    "ingredients": ["Romaine Lettuce", "Croutons", "Parmesan", "Caesar Dressing"],
+    "instructions": "Toss lettuce with dressing. Add croutons and parmesan. Serve chilled."
+  },
+  {
+    "id": 9,
+    "name": "Sushi Rolls",
+    "image": "https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg",
+    "category": "Japanese",
+    "description": "Traditional Japanese rice rolls with nori, vegetables, and seafood.",
+    "ingredients": ["Sushi Rice", "Nori Sheets", "Cucumber", "Avocado", "Salmon"],
+    "instructions": "Spread rice on nori. Add cucumber, avocado, and salmon. Roll tightly and slice into pieces. Serve with soy sauce and wasabi."
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Cake",
+    "image": "https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg",
+    "category": "Dessert",
+    "description": "Rich and moist chocolate cake topped with creamy frosting.",
+    "ingredients": ["Flour", "Cocoa Powder", "Eggs", "Butter", "Sugar", "Baking Powder"],
+    "instructions": "Mix flour, cocoa, sugar, and baking powder. Stir in eggs and butter. Bake until a toothpick comes out clean. Frost with chocolate icing."
+  }
+]
