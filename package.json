@@ -1,12 +1,13 @@
 {
   "name": "recipe-explorer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "A React app to explore recipes using TheMealDB API, with responsive design and ingredient modals.",
+  "author": "Your Name",
   "dependencies": {
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.0.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.5.2",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "react": "^18.2.0",
@@ -19,8 +20,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": [

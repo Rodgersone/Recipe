@@ -9,7 +9,7 @@ const RecipeCard = ({ recipe, onClick }) => {
     setTimeout(() => {
       setLoading(false);
       onClick(recipe);
-    }, 3000); // ⏳ 3 seconds loading
+    }, 3000); //  3 seconds loading
   };
 
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Modal from "../components/Modal"; // use the same modal component we built earlier
+import Modal from "../components/Modal"; // use the same modal component
 import "./Recipes.css";
 
 const Recipes = () => {
@@ -9,7 +9,7 @@ const Recipes = () => {
   useEffect(() => {
     fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
       .then((res) => res.json())
-      .then((data) => setRecipes((data.meals || []).slice(0, 6))); // only 6
+      .then((data) => setRecipes((data.meals || []).slice(0, 6))); // limit to 6 meals
   }, []);
 
   return (
@@ -34,7 +34,9 @@ const Recipes = () => {
                   />
                   <div className="recipe-content">
                     <h3>{meal.strMeal}</h3>
-                    <p>{meal.strArea} | {meal.strCategory}</p>
+                    <p>
+                      {meal.strArea} | {meal.strCategory}
+                    </p>
                     <button
                       className="recipe-btn"
                       onClick={() => setSelectedRecipe(meal)}
@@ -59,7 +61,13 @@ const Recipes = () => {
             image: selectedRecipe.strMealThumb,
             category: selectedRecipe.strCategory,
             ingredients: Array.from({ length: 20 })
-              .map((_, i) => selectedRecipe[`strIngredient${i + 1}`])
+              .map((_, i) => {
+                const ingredient = selectedRecipe[`strIngredient${i + 1}`];
+                const measure = selectedRecipe[`strMeasure${i + 1}`];
+                return ingredient && ingredient.trim()
+                  ? `${ingredient} - ${measure || ""}`.trim()
+                  : null;
+              })
               .filter(Boolean),
           }
         }

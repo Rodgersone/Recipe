@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1100;
-  padding: 15px; /* space for small screens */
+  padding: 15px;
 }
 
 .modal-content {
@@ -18,16 +18,22 @@
   border-radius: 16px;
   max-width: 500px;
   width: 100%;
-  max-height: 80vh;       /* prevents overflow */
-  overflow-y: auto;       /* scroll if content too tall */
+  max-height: 80vh;
+  overflow-y: auto;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   animation: zoomIn 0.3s ease;
 }
 
 @keyframes zoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .modal-title {
@@ -36,8 +42,11 @@
   color: #ff6600;
 }
 
+/* ✅ FIX: constrain modal image */
 .modal-img {
   max-width: 100%;
+  max-height: 250px; /* keep image neat */
+  object-fit: cover; /* prevents stretching */
   border-radius: 12px;
   margin: 15px 0;
 }
@@ -61,17 +70,26 @@
 .ingredients-list ul {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
 }
 
 .ingredients-list ul li {
   background: #f8f8f8;
   padding: 8px 12px;
-  margin-bottom: 8px;
   border-radius: 8px;
   font-size: 0.95rem;
+  color: #333;
 }
 
-/* Close button */
+/* ✅ Two-column on bigger screens */
+@media (min-width: 768px) {
+  .ingredients-list ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .close-btn {
   display: block;
   margin: 20px auto 0;
@@ -89,39 +107,19 @@
   background: #e68900;
 }
 
-/* Responsive tweaks */
-@media (max-width: 992px) {
-  .modal-content {
-    max-width: 450px;
-    padding: 18px 20px;
-  }
-  .modal-title {
-    font-size: 1.6rem;
-  }
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
 }
 
-@media (max-width: 768px) {
-  .modal-content {
-    max-width: 400px;
-    padding: 16px 18px;
-  }
-  .modal-title {
-    font-size: 1.4rem;
-  }
-  .ingredients-list ul li {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .modal-content {
-    max-width: 95%;
-    padding: 14px 16px;
-  }
-  .modal-title {
-    font-size: 1.2rem;
-  }
-  .ingredients-list ul li {
-    font-size: 0.85rem;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
